@@ -2,22 +2,27 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6": {
-      "ControlzEx/3.0.2.4": {
-        "type": "package",
-        "compile": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        }
-      },
-      "MahApps.Metro/1.6.5": {
+      "ControlzEx/4.0.0-alpha0232": {
         "type": "package",
         "dependencies": {
-          "ControlzEx": "[3.0.2.4, 4.0.0)"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
         },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0262": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "4.0.0-alpha0232"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
         "compile": {
           "lib/net46/MahApps.Metro.dll": {}
         },
@@ -25,7 +30,41 @@
           "lib/net46/MahApps.Metro.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsDX/3.7.0.1708": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "MonoGame.Extended/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        }
+      },
+      "MonoGame.Extended.Graphics/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Extended": "[1.1.0]",
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        }
+      },
+      "MonoGame.Framework.WindowsDX/3.7.1.189": {
         "type": "package",
         "dependencies": {
           "SharpDX": "4.0.1",
@@ -57,6 +96,15 @@
         },
         "runtime": {
           "lib/net452/MonoGame.Framework.WpfInterop.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "SharpDX/4.0.1": {
@@ -171,22 +219,27 @@
       }
     },
     ".NETFramework,Version=v4.6/win": {
-      "ControlzEx/3.0.2.4": {
-        "type": "package",
-        "compile": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        }
-      },
-      "MahApps.Metro/1.6.5": {
+      "ControlzEx/4.0.0-alpha0232": {
         "type": "package",
         "dependencies": {
-          "ControlzEx": "[3.0.2.4, 4.0.0)"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
         },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0262": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "4.0.0-alpha0232"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
         "compile": {
           "lib/net46/MahApps.Metro.dll": {}
         },
@@ -194,7 +247,41 @@
           "lib/net46/MahApps.Metro.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsDX/3.7.0.1708": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "MonoGame.Extended/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        }
+      },
+      "MonoGame.Extended.Graphics/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Extended": "[1.1.0]",
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        }
+      },
+      "MonoGame.Framework.WindowsDX/3.7.1.189": {
         "type": "package",
         "dependencies": {
           "SharpDX": "4.0.1",
@@ -226,6 +313,15 @@
         },
         "runtime": {
           "lib/net452/MonoGame.Framework.WpfInterop.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "SharpDX/4.0.1": {
@@ -340,22 +436,27 @@
       }
     },
     ".NETFramework,Version=v4.6/win-x64": {
-      "ControlzEx/3.0.2.4": {
-        "type": "package",
-        "compile": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        }
-      },
-      "MahApps.Metro/1.6.5": {
+      "ControlzEx/4.0.0-alpha0232": {
         "type": "package",
         "dependencies": {
-          "ControlzEx": "[3.0.2.4, 4.0.0)"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
         },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0262": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "4.0.0-alpha0232"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
         "compile": {
           "lib/net46/MahApps.Metro.dll": {}
         },
@@ -363,7 +464,41 @@
           "lib/net46/MahApps.Metro.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsDX/3.7.0.1708": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "MonoGame.Extended/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        }
+      },
+      "MonoGame.Extended.Graphics/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Extended": "[1.1.0]",
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        }
+      },
+      "MonoGame.Framework.WindowsDX/3.7.1.189": {
         "type": "package",
         "dependencies": {
           "SharpDX": "4.0.1",
@@ -395,6 +530,15 @@
         },
         "runtime": {
           "lib/net452/MonoGame.Framework.WpfInterop.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "SharpDX/4.0.1": {
@@ -509,22 +653,27 @@
       }
     },
     ".NETFramework,Version=v4.6/win-x86": {
-      "ControlzEx/3.0.2.4": {
-        "type": "package",
-        "compile": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {},
-          "lib/net45/System.Windows.Interactivity.dll": {}
-        }
-      },
-      "MahApps.Metro/1.6.5": {
+      "ControlzEx/4.0.0-alpha0232": {
         "type": "package",
         "dependencies": {
-          "ControlzEx": "[3.0.2.4, 4.0.0)"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
         },
+        "compile": {
+          "lib/net45/ControlzEx.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {}
+        }
+      },
+      "MahApps.Metro/2.0.0-alpha0262": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "4.0.0-alpha0232"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
         "compile": {
           "lib/net46/MahApps.Metro.dll": {}
         },
@@ -532,7 +681,41 @@
           "lib/net46/MahApps.Metro.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsDX/3.7.0.1708": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+        }
+      },
+      "MonoGame.Extended/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll": {}
+        }
+      },
+      "MonoGame.Extended.Graphics/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MonoGame.Extended": "[1.1.0]",
+          "Newtonsoft.Json": "9.0.0"
+        },
+        "compile": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll": {}
+        }
+      },
+      "MonoGame.Framework.WindowsDX/3.7.1.189": {
         "type": "package",
         "dependencies": {
           "SharpDX": "4.0.1",
@@ -564,6 +747,15 @@
         },
         "runtime": {
           "lib/net452/MonoGame.Framework.WpfInterop.dll": {}
+        }
+      },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
       "SharpDX/4.0.1": {
@@ -679,34 +871,30 @@
     }
   },
   "libraries": {
-    "ControlzEx/3.0.2.4": {
-      "sha512": "5pgvHE329JDDPwPHCVJe93yxu3CPl2wPh6ma1watUAGjvBtNSMkDcyzvwZcHSryihA/y4Ml3OmDYz9vj7Fg6Xg==",
+    "ControlzEx/4.0.0-alpha0232": {
+      "sha512": "+fDSUVmDiN4c4DurOCuuzYe8NrwTGXewXmsYnRtRL/nUJlvnzHmVLKFpRoSu1ojqvd6ckCKZStZx3tz4stL+Mw==",
       "type": "package",
-      "path": "controlzex/3.0.2.4",
+      "path": "controlzex/4.0.0-alpha0232",
       "files": [
         ".nupkg.metadata",
-        "controlzex.3.0.2.4.nupkg.sha512",
+        ".signature.p7s",
+        "controlzex.4.0.0-alpha0232.nupkg.sha512",
         "controlzex.nuspec",
-        "lib/net40/ControlzEx.dll",
-        "lib/net40/ControlzEx.pdb",
-        "lib/net40/System.Windows.Interactivity.dll",
         "lib/net45/ControlzEx.dll",
-        "lib/net45/ControlzEx.pdb",
-        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/net45/ControlzEx.xml",
         "lib/net462/ControlzEx.dll",
-        "lib/net462/ControlzEx.pdb",
-        "lib/net462/System.Windows.Interactivity.dll"
+        "lib/net462/ControlzEx.xml",
+        "lib/netcoreapp3.0/ControlzEx.dll",
+        "lib/netcoreapp3.0/ControlzEx.xml"
       ]
     },
-    "MahApps.Metro/1.6.5": {
-      "sha512": "XFxACnPbTAZ9qYcXMqFDLXXEpAbLj3BYaXqwH8NoY0sfSAYepEpE4C53Nd6AI4TnQ+nmDugtO8dwsAXPtt0SXQ==",
+    "MahApps.Metro/2.0.0-alpha0262": {
+      "sha512": "kv6JhrttyehOw0NIxYJV1fy1tyW6m9ClG9iKqghCyJ+atqdqRQavGgo22BWfu4GyqN9b9ogEpn0R943t/9Om0g==",
       "type": "package",
-      "path": "mahapps.metro/1.6.5",
+      "path": "mahapps.metro/2.0.0-alpha0262",
       "files": [
         ".nupkg.metadata",
-        "lib/net40/MahApps.Metro.dll",
-        "lib/net40/MahApps.Metro.pdb",
-        "lib/net40/MahApps.Metro.xml",
+        ".signature.p7s",
         "lib/net45/MahApps.Metro.dll",
         "lib/net45/MahApps.Metro.pdb",
         "lib/net45/MahApps.Metro.xml",
@@ -716,21 +904,67 @@
         "lib/net47/MahApps.Metro.dll",
         "lib/net47/MahApps.Metro.pdb",
         "lib/net47/MahApps.Metro.xml",
-        "mahapps.metro.1.6.5.nupkg.sha512",
+        "lib/netcoreapp3.0/MahApps.Metro.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.xml",
+        "mahapps.metro.2.0.0-alpha0262.nupkg.sha512",
         "mahapps.metro.nuspec"
       ]
     },
-    "MonoGame.Framework.WindowsDX/3.7.0.1708": {
-      "sha512": "Msofo9MfsA7hYt/NgGhr/XV0hbUwRM9qjtZ0z3eJ1VqHDDuDMRoK5ZgHNktkOwZosyMG9xBSi8h65XeBiT8fcQ==",
+    "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+      "sha512": "ZFmmeTIbRP5a5J47lIUeO6WgFdrU+d2NBPSv1BgsQFVdUK9jgIKs0zOnt6RJDOlSvrvlGWzhv0LgNZfXGz9nEA==",
       "type": "package",
-      "path": "monogame.framework.windowsdx/3.7.0.1708",
+      "path": "microsoft.xaml.behaviors.wpf/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.0.1.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec"
+      ]
+    },
+    "MonoGame.Extended/1.1.0": {
+      "sha512": "Qsh1+GROL/6Y9wwwsLT/t0D+GgoC0Lsy5rQZO70eLRSytEpe0OBc4EbvNCmx7wqMB6wDkhTjFo9zERJcJbmo2g==",
+      "type": "package",
+      "path": "monogame.extended/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+win8+wpa81/MonoGame.Extended.XML",
+        "lib/portable-net45+win8+wpa81/MonoGame.Extended.dll",
+        "lib/portable-net45+win8+wpa81/MonoGame.Extended.pdb",
+        "monogame.extended.1.1.0.nupkg.sha512",
+        "monogame.extended.nuspec",
+        "readme.txt"
+      ]
+    },
+    "MonoGame.Extended.Graphics/1.1.0": {
+      "sha512": "488suNNxhipHImfd69fwYo9sRYc7sqASrPDRwb7AsWt70rjtEw8NWdr0iWZuNlO/dp7qGeoA56+jDLa36K7cmA==",
+      "type": "package",
+      "path": "monogame.extended.graphics/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.XML",
+        "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.dll",
+        "lib/portable-net45+win8+wpa81/MonoGame.Extended.Graphics.pdb",
+        "monogame.extended.graphics.1.1.0.nupkg.sha512",
+        "monogame.extended.graphics.nuspec",
+        "readme.txt"
+      ]
+    },
+    "MonoGame.Framework.WindowsDX/3.7.1.189": {
+      "sha512": "gu0zcsmlFPyHgJA/Qpu7wrC/aDb/AHvdrLP4iEc2VojV0zkcg8XKqn0FfQHa43SexT+N8NmwgosfqZ8LDpkxJA==",
+      "type": "package",
+      "path": "monogame.framework.windowsdx/3.7.1.189",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/MonoGame.Framework.WindowsDX.targets",
         "lib/net45/MonoGame.Framework.dll",
         "lib/net45/MonoGame.Framework.xml",
-        "monogame.framework.windowsdx.3.7.0.1708.nupkg.sha512",
+        "monogame.framework.windowsdx.3.7.1.189.nupkg.sha512",
         "monogame.framework.windowsdx.nuspec"
       ]
     },
@@ -748,12 +982,39 @@
         "readme.txt"
       ]
     },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
     "SharpDX/4.0.1": {
       "sha512": "8YA1VFg1/K8Emb8FEZDobojcv1BLuppVo7CRJQEgA1V748VIMPBru0i0OnsCjLSThzTn7juOvH85qjFL9Grl1w==",
       "type": "package",
       "path": "sharpdx/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.dll",
         "lib/net40/SharpDX.xml",
         "lib/net45/SharpDX.dll",
@@ -775,6 +1036,7 @@
       "path": "sharpdx.direct2d1/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.Direct2D1.dll",
         "lib/net40/SharpDX.Direct2D1.xml",
         "lib/net45/SharpDX.Direct2D1.dll",
@@ -796,6 +1058,7 @@
       "path": "sharpdx.direct3d11/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.Direct3D11.dll",
         "lib/net40/SharpDX.Direct3D11.xml",
         "lib/net45/SharpDX.Direct3D11.dll",
@@ -817,6 +1080,7 @@
       "path": "sharpdx.direct3d9/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.Direct3D9.dll",
         "lib/net40/SharpDX.Direct3D9.xml",
         "lib/net45/SharpDX.Direct3D9.dll",
@@ -835,6 +1099,7 @@
       "path": "sharpdx.dxgi/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.DXGI.dll",
         "lib/net40/SharpDX.DXGI.xml",
         "lib/net45/SharpDX.DXGI.dll",
@@ -856,6 +1121,7 @@
       "path": "sharpdx.mathematics/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.Mathematics.dll",
         "lib/net40/SharpDX.Mathematics.xml",
         "lib/net45/SharpDX.Mathematics.dll",
@@ -877,6 +1143,7 @@
       "path": "sharpdx.mediafoundation/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.MediaFoundation.dll",
         "lib/net40/SharpDX.MediaFoundation.xml",
         "lib/net45/SharpDX.MediaFoundation.dll",
@@ -898,6 +1165,7 @@
       "path": "sharpdx.xaudio2/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.XAudio2.dll",
         "lib/net40/SharpDX.XAudio2.xml",
         "lib/net45/SharpDX.XAudio2.dll",
@@ -919,6 +1187,7 @@
       "path": "sharpdx.xinput/4.0.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "lib/net40/SharpDX.XInput.dll",
         "lib/net40/SharpDX.XInput.xml",
         "lib/net45/SharpDX.XInput.dll",
@@ -937,7 +1206,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6": [
-      "MahApps.Metro >= 1.6.5",
+      "MahApps.Metro >= 2.0.0-alpha0262",
+      "MonoGame.Extended >= 1.1.0",
+      "MonoGame.Extended.Graphics >= 1.1.0",
+      "MonoGame.Framework.WindowsDX >= 3.7.1.189",
       "MonoGame.Framework.WpfInterop >= 1.7.1"
     ]
   },
@@ -947,11 +1219,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\WpfInterop.Test\\WpfInterop.Test\\WpfApp\\WpfApp.csproj",
+      "projectUniqueName": "E:\\WpfInterop.Test\\WpfApp\\WpfApp.csproj",
       "projectName": "WpfApp",
-      "projectPath": "E:\\WpfInterop.Test\\WpfInterop.Test\\WpfApp\\WpfApp.csproj",
+      "projectPath": "E:\\WpfInterop.Test\\WpfApp\\WpfApp.csproj",
       "packagesPath": "C:\\Users\\yhh\\.nuget\\packages\\",
-      "outputPath": "E:\\WpfInterop.Test\\WpfInterop.Test\\WpfApp\\obj\\",
+      "outputPath": "E:\\WpfInterop.Test\\WpfApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -963,7 +1235,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.grapecity.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -977,7 +1248,19 @@
         "dependencies": {
           "MahApps.Metro": {
             "target": "Package",
-            "version": "[1.6.5, )"
+            "version": "[2.0.0-alpha0262, )"
+          },
+          "MonoGame.Extended": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "MonoGame.Extended.Graphics": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "MonoGame.Framework.WindowsDX": {
+            "target": "Package",
+            "version": "[3.7.1.189, )"
           },
           "MonoGame.Framework.WpfInterop": {
             "target": "Package",
@@ -997,5 +1280,33 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MonoGame.Extended 1.1.0 依赖于 Newtonsoft.Json (>= 9.0.0)，但找不到 Newtonsoft.Json 9.0.0。 已解决 Newtonsoft.Json 9.0.1 的近似最佳匹配。 ",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6",
+        ".NETFramework,Version=v4.6/win",
+        ".NETFramework,Version=v4.6/win-x64",
+        ".NETFramework,Version=v4.6/win-x86"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "MonoGame.Extended.Graphics 1.1.0 依赖于 Newtonsoft.Json (>= 9.0.0)，但找不到 Newtonsoft.Json 9.0.0。 已解决 Newtonsoft.Json 9.0.1 的近似最佳匹配。 ",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6",
+        ".NETFramework,Version=v4.6/win",
+        ".NETFramework,Version=v4.6/win-x64",
+        ".NETFramework,Version=v4.6/win-x86"
+      ]
+    }
+  ]
 }
