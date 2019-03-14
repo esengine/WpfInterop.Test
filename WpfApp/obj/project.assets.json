@@ -2,41 +2,53 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6": {
-      "ControlzEx/4.0.0-alpha0232": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
-        },
-        "compile": {
-          "lib/net45/ControlzEx.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {}
-        }
-      },
-      "MahApps.Metro/2.0.0-alpha0262": {
-        "type": "package",
-        "dependencies": {
-          "ControlzEx": "4.0.0-alpha0232"
-        },
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations",
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net46/MahApps.Metro.dll": {}
-        },
-        "runtime": {
-          "lib/net46/MahApps.Metro.dll": {}
-        }
-      },
-      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+      "Extended.Wpf.Toolkit/3.5.0": {
         "type": "package",
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
         }
       },
       "MonoGame.Extended/1.1.0": {
@@ -219,41 +231,53 @@
       }
     },
     ".NETFramework,Version=v4.6/win": {
-      "ControlzEx/4.0.0-alpha0232": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
-        },
-        "compile": {
-          "lib/net45/ControlzEx.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {}
-        }
-      },
-      "MahApps.Metro/2.0.0-alpha0262": {
-        "type": "package",
-        "dependencies": {
-          "ControlzEx": "4.0.0-alpha0232"
-        },
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations",
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net46/MahApps.Metro.dll": {}
-        },
-        "runtime": {
-          "lib/net46/MahApps.Metro.dll": {}
-        }
-      },
-      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+      "Extended.Wpf.Toolkit/3.5.0": {
         "type": "package",
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
         }
       },
       "MonoGame.Extended/1.1.0": {
@@ -436,41 +460,53 @@
       }
     },
     ".NETFramework,Version=v4.6/win-x64": {
-      "ControlzEx/4.0.0-alpha0232": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
-        },
-        "compile": {
-          "lib/net45/ControlzEx.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {}
-        }
-      },
-      "MahApps.Metro/2.0.0-alpha0262": {
-        "type": "package",
-        "dependencies": {
-          "ControlzEx": "4.0.0-alpha0232"
-        },
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations",
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net46/MahApps.Metro.dll": {}
-        },
-        "runtime": {
-          "lib/net46/MahApps.Metro.dll": {}
-        }
-      },
-      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+      "Extended.Wpf.Toolkit/3.5.0": {
         "type": "package",
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
         }
       },
       "MonoGame.Extended/1.1.0": {
@@ -653,41 +689,53 @@
       }
     },
     ".NETFramework,Version=v4.6/win-x86": {
-      "ControlzEx/4.0.0-alpha0232": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.0.1"
-        },
-        "compile": {
-          "lib/net45/ControlzEx.dll": {}
-        },
-        "runtime": {
-          "lib/net45/ControlzEx.dll": {}
-        }
-      },
-      "MahApps.Metro/2.0.0-alpha0262": {
-        "type": "package",
-        "dependencies": {
-          "ControlzEx": "4.0.0-alpha0232"
-        },
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations",
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net46/MahApps.Metro.dll": {}
-        },
-        "runtime": {
-          "lib/net46/MahApps.Metro.dll": {}
-        }
-      },
-      "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
+      "Extended.Wpf.Toolkit/3.5.0": {
         "type": "package",
         "compile": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
         },
         "runtime": {
-          "lib/net45/Microsoft.Xaml.Behaviors.dll": {}
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
         }
       },
       "MonoGame.Extended/1.1.0": {
@@ -871,57 +919,32 @@
     }
   },
   "libraries": {
-    "ControlzEx/4.0.0-alpha0232": {
-      "sha512": "+fDSUVmDiN4c4DurOCuuzYe8NrwTGXewXmsYnRtRL/nUJlvnzHmVLKFpRoSu1ojqvd6ckCKZStZx3tz4stL+Mw==",
+    "Extended.Wpf.Toolkit/3.5.0": {
+      "sha512": "syHi2FK/THdupMYBRu/XIYiPRZ3QuIaPlsTTJBFhH/BrFbmSOJ6qhgiKwoAdzFdGVCDSKX+QNbKrw6e1uvwaqg==",
       "type": "package",
-      "path": "controlzex/4.0.0-alpha0232",
+      "path": "extended.wpf.toolkit/3.5.0",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "controlzex.4.0.0-alpha0232.nupkg.sha512",
-        "controlzex.nuspec",
-        "lib/net45/ControlzEx.dll",
-        "lib/net45/ControlzEx.xml",
-        "lib/net462/ControlzEx.dll",
-        "lib/net462/ControlzEx.xml",
-        "lib/netcoreapp3.0/ControlzEx.dll",
-        "lib/netcoreapp3.0/ControlzEx.xml"
-      ]
-    },
-    "MahApps.Metro/2.0.0-alpha0262": {
-      "sha512": "kv6JhrttyehOw0NIxYJV1fy1tyW6m9ClG9iKqghCyJ+atqdqRQavGgo22BWfu4GyqN9b9ogEpn0R943t/9Om0g==",
-      "type": "package",
-      "path": "mahapps.metro/2.0.0-alpha0262",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/MahApps.Metro.dll",
-        "lib/net45/MahApps.Metro.pdb",
-        "lib/net45/MahApps.Metro.xml",
-        "lib/net46/MahApps.Metro.dll",
-        "lib/net46/MahApps.Metro.pdb",
-        "lib/net46/MahApps.Metro.xml",
-        "lib/net47/MahApps.Metro.dll",
-        "lib/net47/MahApps.Metro.pdb",
-        "lib/net47/MahApps.Metro.xml",
-        "lib/netcoreapp3.0/MahApps.Metro.dll",
-        "lib/netcoreapp3.0/MahApps.Metro.pdb",
-        "lib/netcoreapp3.0/MahApps.Metro.xml",
-        "mahapps.metro.2.0.0-alpha0262.nupkg.sha512",
-        "mahapps.metro.nuspec"
-      ]
-    },
-    "Microsoft.Xaml.Behaviors.Wpf/1.0.1": {
-      "sha512": "ZFmmeTIbRP5a5J47lIUeO6WgFdrU+d2NBPSv1BgsQFVdUK9jgIKs0zOnt6RJDOlSvrvlGWzhv0LgNZfXGz9nEA==",
-      "type": "package",
-      "path": "microsoft.xaml.behaviors.wpf/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.Xaml.Behaviors.dll",
-        "lib/net45/Microsoft.Xaml.Behaviors.xml",
-        "microsoft.xaml.behaviors.wpf.1.0.1.nupkg.sha512",
-        "microsoft.xaml.behaviors.wpf.nuspec"
+        "extended.wpf.toolkit.3.5.0.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "tools/install.ps1"
       ]
     },
     "MonoGame.Extended/1.1.0": {
@@ -1206,7 +1229,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6": [
-      "MahApps.Metro >= 2.0.0-alpha0262",
+      "Extended.Wpf.Toolkit >= 3.5.0",
       "MonoGame.Extended >= 1.1.0",
       "MonoGame.Extended.Graphics >= 1.1.0",
       "MonoGame.Framework.WindowsDX >= 3.7.1.189",
@@ -1246,9 +1269,9 @@
     "frameworks": {
       "net46": {
         "dependencies": {
-          "MahApps.Metro": {
+          "Extended.Wpf.Toolkit": {
             "target": "Package",
-            "version": "[2.0.0-alpha0262, )"
+            "version": "[3.5.0, )"
           },
           "MonoGame.Extended": {
             "target": "Package",

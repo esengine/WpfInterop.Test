@@ -1,4 +1,4 @@
-﻿<mah:MetroWindow
+﻿<Window
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         x:Class="WpfApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -19,4 +19,4 @@
         </Menu>
         <local:SceneView Grid.Row="1"></local:SceneView>
     </Grid>
-</mah:MetroWindow>
+</Window>
